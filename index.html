@@ -77,6 +77,10 @@
   <time class="dt-published" datetime="2026-03-02T07:15:22.000Z" itemprop="datePublished">2026-03-02</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -93,12 +97,26 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="计算机网络的概念"><a href="#计算机网络的概念" class="headerlink" title="计算机网络的概念"></a>计算机网络的概念</h3><h3 id="计算机网络的结构"><a href="#计算机网络的结构" class="headerlink" title="计算机网络的结构"></a>计算机网络的结构</h3><p>为了（这个我忘了晚上查一下），这个</p>
+        <h2 id="本文仅仅作为预习，根据慕课和计算机网络课件来的"><a href="#本文仅仅作为预习，根据慕课和计算机网络课件来的" class="headerlink" title="本文仅仅作为预习，根据慕课和计算机网络课件来的"></a>本文仅仅作为预习，根据慕课和计算机网络课件来的</h2><h3 id="网络分类（Network-classification-in-size）"><a href="#网络分类（Network-classification-in-size）" class="headerlink" title="网络分类（Network classification in size）"></a>网络分类（Network classification in size）</h3><p> 个域网PAN（Personal Area Network ）<br>• 能在便携式消费电器与通信设备之间进行短距离<br>通信的网络<br>• 覆盖范围一般在10米半径以内，如蓝牙耳机等（不过看spoc慕课上似乎给出的是小于1m，建议使用这个定义）<br>➢ 局域网LAN（Local Area Network）（10m到1km）<br>• 局部地区形成的区域网络，如企业网络<br>• 分布地区范围有限，可大可小，大到一栋建筑、<br>小到办公室内的组网<br>• 电脑WLAN接入，打印机共享等等<br>➢ 城域网MAN（Metropolitan Area Network ）（10km）<br>• 范围覆盖一个城市的网络<br>➢ 广域网WAN（Wide Area Network）（大于10km<br>• 覆盖很大地理区域，乃至覆盖地区和国家</p>
+<h3 id="计算机网络的概念"><a href="#计算机网络的概念" class="headerlink" title="计算机网络的概念"></a>计算机网络的概念</h3><p>首先我认为应该先解释一下网络的定义。（这是我的个人理解，当然我们可以看老师的课程回放）我们可以这样描述网络：网络由节点组成，节点之间可以相互传输信息&#x2F;数据。</p>
+<p>计算机网络，顾名思义，就是和计算机相关。那我们首先给出计算机的定义：CPU+MEM+Peripherals（外设，比如鼠标）<br>这里的MEM是memory的意思<br>不过，computer本身也是network的一部分，比如说MEM的部分，它作为存储，有SSD这样的物理磁盘存储，也有像云存储这样在网络上的存储，所以现在的computer和network有一点点相互交融的意味，不过我们不做讨论，只记住CPU+MEM+Peripherals这一点即可。现在原始定义比较重要</p>
+<p>而我们的computer network的定义是：A colection of autonomous computers<br>interconnected，这里interconnect不仅仅是链接，而且可以exchange data，autonomous是可以独立自主完成任务Be able to handle independently</p>
+<p>（顺便一提，移动手机mobile phone在这里不算computer）</p>
+<p>我们纵观计算机网络的架构，会发现自顶而下共分为七层：</p>
+<h4 id="应用层-APP-L"><a href="#应用层-APP-L" class="headerlink" title="应用层 APP L"></a>应用层 APP L</h4><p>注意这里也是有各种协议的，比如我们的邮箱，它并不是指手机的APP，只是指Application<br>（这里我还没有完全理解）<br>（在网上的定义里面，它被描述成与各种应用程序交互的层次，APP L协议定义了一系列规则以及标准，确保个程序之间有效通信，说白了还是协议比较重要。<br>这里顺便一提，协议应该有（这里只是我个人的理解外加AI的一些说法）语法（数据传输的形式，或者说，数据的格式，编码和信号电平），语义（接收信号后有统一的动作，规定通信双方索要表达的含义，指令和应答关系），时序（也就是数据传输的速率和顺序，或者说发送方与接收方的交互节奏，超时重传的时间设定）</p>
+<p>![E:\博客\source_posts](.\pic\physical L)</p>
+<h4 id="传输层（我自己的翻译）-Transport-L"><a href="#传输层（我自己的翻译）-Transport-L" class="headerlink" title="传输层（我自己的翻译） Transport L"></a>传输层（我自己的翻译） Transport L</h4><h4 id="Network-L"><a href="#Network-L" class="headerlink" title="Network L"></a>Network L</h4><p>![E:\博客\source_posts](.\pic\physical L)</p>
+<h4 id="MAC-sub-L"><a href="#MAC-sub-L" class="headerlink" title="MAC sub L"></a>MAC sub L</h4><p>MAC不是苹果的mac，MAC的全称是Medium Access Control，也就是媒体访问控制，它主要的功能有两个：1.寻址，2.控制<br>1.寻址，找到数据包的接收方，<br>2.控制，谁先发，谁后发，发送的问题如何处理</p>
+<p>![E:\博客\source_posts](.\pic\physical L)</p>
+<h4 id="DL-L（不是动态链接库，D是data）"><a href="#DL-L（不是动态链接库，D是data）" class="headerlink" title="DL L（不是动态链接库，D是data）"></a>DL L（不是动态链接库，D是data）</h4><p>可以纠正physica L的一些错误<br>![E:\博客\source_posts](.\pic\physical L)</p>
+<h4 id="Physical-L"><a href="#Physical-L" class="headerlink" title="Physical L"></a>Physical L</h4><p>这一层就是物理层面，比如说信号的传输，注意这一层的信号是有概率因为干扰或者环境等等原因而传输错误的，<br>![E:\博客\source_posts](.\pic\physical L)</p>
+<h3 id="信道的分布方式："><a href="#信道的分布方式：" class="headerlink" title="信道的分布方式："></a>信道的分布方式：</h3><p><img src="/.%5Cpic%5C%E4%BF%A1%E9%81%93%E7%9A%84%E5%88%86%E5%B8%83%E6%96%B9%E5%BC%8F" alt="E:\博客\source\_posts"><br>思考题:哪一种拓扑是最佳的？<br>以及雨课堂的某题目为什么是选BUS而不是Star，问一下老师</p>
+<h3 id="TCP-IP-module"><a href="#TCP-IP-module" class="headerlink" title="TCP&#x2F;IP module"></a>TCP&#x2F;IP module</h3><p>两个计算机传输数据的时候，例如A传数据给B，数据从A的APP L 进入到pHysical L，然后接收时从physical L传输到APP L</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/02/%E8%AE%A1%E7%BD%91%E7%AC%AC%E4%B8%80%E8%8A%82%E9%A2%84%E4%B9%A0/" data-id="cuid33hGctz8-5uaPY_3Ih8PG" data-title="计网第一节预习" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/02/%E8%AE%A1%E7%BD%91%E7%AC%AC%E4%B8%80%E8%8A%82%E9%A2%84%E4%B9%A0/" data-id="cuid81aSS-W_4DpLpk3NZa2FT" data-title="计网第一节预习" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -158,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/02/CS231n%E7%AC%94%E8%AE%B01/" data-id="cuidG8MNU_AaHGNtdhbQ-NRRz" data-title="CS231n笔记1" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/02/CS231n%E7%AC%94%E8%AE%B01/" data-id="cuidY-x73gn1O-gYtEbKywBn3" data-title="CS231n笔记1" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -209,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/03/01/hello-world/" data-id="cuidTeLongampZr5i5UwMpeO5" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/03/01/hello-world/" data-id="cuidFCZBm78yEpO5Xhg8JpoAN" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -231,7 +249,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CS231n/">CS231n</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CS231n/">CS231n</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a></li></ul>
     </div>
   </div>
 
